@@ -11,7 +11,7 @@ app.use(cors({
     origin:["http://localhost:3001"],
     credentials:true
 }))
-mongoose.connect("mongodb://localhost:27017/internships").then(()=>{
+mongoose.connect("mongodb+srv://nitinhansraj102:nitin@cluster0.gmuczhs.mongodb.net/internship?retryWrites=true&w=majority&appName=Cluster0").then(()=>{
     console.log("connected to database")
 })
 app.use("/auth",router)
